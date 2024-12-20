@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Profil Manchester United</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background: #DA291C;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .profile-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .profile-header {
+      text-align: center;
+      padding: 20px;
+      background: #DA291C;
+      color: white;
+    }
+    .profile-header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 10px;
+    }
+    .profile-header h2 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .profile-header p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: lighter;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .profile-content {
+      padding: 30px;
+    }
+    .profile-content h2 {
+      font-size: 2.5rem;
+      color: #DA291C;
+      font-weight: bold;
+    }
+    .profile-content p {
+      color: #333333;
+      line-height: 1.6;
+    }
+    .btn-read-more {
+      background: #DA291C;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 20px;
+    }
+    .btn-read-more:hover {
+      background: #A51D1B;
+    }
+    .newsletter {
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .newsletter h5 {
+      color: #DA291C;
+      font-weight: bold;
+    }
+    .input-group .form-control {
+      border-radius: 50px 0 0 50px;
+    }
+    .btn-subscribe {
+      background: #DA291C;
+      color: white;
+      border-radius: 0 50px 50px 0;
+      border: none;
+    }
+    .btn-subscribe:hover {
+      background: #A51D1B;
+    }
+    .about-content {
+      margin-top: 30px;
+    }
+    .about-content h3 {
+      color: #DA291C;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .about-content p {
+      color: #333333;
+      line-height: 1.8;
+    }
+    .about-content ul {
+      list-style: none;
+      padding: 0;
+    }
+    .about-content ul li {
+      padding: 5px 0;
+      color: #333333;
+    }
+    .about-content ul li span {
+      font-weight: bold;
+      color: #DA291C;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="profile-card">
+      <!-- Bagian Header dengan Logo -->
+      <div class="profile-header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Logo Manchester United">
+        <h2>Manchester United</h2>
+        <p>Setan Merah</p>
+      </div>
+      
+      <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Old_Trafford_inside_2022.jpg" alt="Old Trafford">
+          </div>
+          <div class="carousel-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Manchester_United_Team.jpg" alt="Tim Manchester United">
+          </div>
+          <div class="carousel-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Manchester_United_Cup_Win.jpg" alt="Kemenangan Manchester United">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sebelumnya</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Selanjutnya</span>
+        </button>
+      </div>
+
+      <div class="profile-content">
+        <h5 class="text-uppercase text-muted">Klub Sepak Bola</h5>
+        <h2>Manchester United</h2>
+        <p>Manchester United adalah salah satu klub sepak bola paling terkenal di dunia, dikenal dengan pemain legendaris dan sejarah kesuksesannya.</p>
+        <a href="#" class="btn btn-read-more">Baca Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Terima kasih telah berlangganan!");
+    });
+  </script>
+</body>
+</html>
